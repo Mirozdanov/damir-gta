@@ -1,0 +1,347 @@
+body
+    margin: 0
+    background-color: #121212
+    color: #fff
+    font-family: "Montserrat", serif
+button, h1,h2,h3
+    font-family: "Oswald", serif
+h2
+    font-size: 60px
+    margin: 0
+h3
+    font-size: 30px
+.main-button
+    border: 1px solid #fff
+    border-radius: 4px
+    cursor: pointer
+    font-size: 20px
+    text-transform: uppercase
+    padding: 20px 80px
+    margin-top: 30px
+    background-color: #000
+    color: #fff
+    transition: background .3s ease-out,color .3s ease-out,border-color .3s ease-out
+.main-button:hover
+    background-color: #ffffff
+    color: #000000      
+    transition: background .3s ease-out,color .3s ease-out,border-color .3s ease-out  
+header, section, footer
+    padding-left: 80px
+    padding-right: 80px
+header
+    height: 80px
+    border-bottom: 1px solid #363636
+    background-color: #000
+    display: flex
+    justify-content: space-between
+
+.header-left, .header-center, .header-right
+    display: flex
+    align-items: center
+    height: 100%
+    gap: 15px
+.header-left
+    .l1
+        height: 40px
+    .l2
+        height: 30px
+    div
+        background-color: #ffffff9e
+        height: 30px
+        width: 2px
+.header-center
+    ul
+        display: flex
+        justify-content: space-around
+        list-style: none
+        gap: 25px
+        li
+            transition: 0.5s ease
+        li:hover 
+            color: #C20000
+            transition: 1s ease
+.header-right
+    button
+        color: #fff
+        background: #000
+        border: 1px solid #fff
+        border-radius: 5px
+        gap: 10px
+        padding: 10px 20px
+        font-size: 16px
+        font-weight: bold
+        text-align: center
+        text-transform: uppercase
+        transition: 0.5s ease
+    button:hover
+        color: #ffffff
+        background: #C20000
+        border: 1px solid #C20000
+        transition: 1s ease
+.banner
+    height: calc( 100vh - 80px )
+    background-image: url("banner.png")
+    background-size: cover
+    padding: 0
+    box-sizing: border-box
+    div
+        width: 500px
+        padding: 80px
+        background: linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.7) 35%,transparent 75%)
+    img
+        height: 120px
+    h2
+        font-size: 40px
+    p
+        font-size: 20px
+        line-height: 30px
+        padding: 0
+
+.news
+    display: grid
+    grid-template-columns: 2fr 1fr 1fr
+    grid-template-rows: 80px 314px 314px
+    grid-template-areas: "h2 h2 h2" "n1 n2 n3" "n1 n4 n5"
+    gap: 23px
+    padding: 80px
+
+    h2 
+        grid-area: h2
+    .new-1
+        grid-area: n1
+    .new-2
+        grid-area: n2
+    .new-3
+        grid-area: n3
+    .new-4
+        grid-area: n4
+    .new-5
+        grid-area: n5
+    div
+        border-radius: 8px
+        position: relative
+        display: flex
+        align-items: flex-end
+        border: 2px solid #ffffff00
+        transition: 1s border ease
+        overflow: hidden
+        img
+            position: absolute
+            height: 100%
+            width: 100%
+            object-fit: cover
+            object-position: center
+            z-index: 1
+            border-radius: 8px
+            opacity: 100%
+            transition: 1s opacity ease
+        h3
+            position: absolute
+            z-index: 2
+            margin: 30px
+            transform: translateY(250px)
+            transition: 1s transform ease
+    div:hover
+        border: 2px solid #fff
+        transition: 1s border ease
+        h3
+            transform: translateY(0)
+            transition: 1s transform ease
+        img
+            opacity: 40%
+            transition: 1s opacity ease
+.updates
+    padding: 80px
+    display: flex
+    flex-wrap: wrap
+    gap: 40px
+    h2
+        width: 100%
+.update
+    border: 2px solid #ffffff00
+    transition: 1s border ease  
+    position: relative
+    flex: 1 500px
+    height: 400px
+    border-radius: 8px
+    overflow: hidden
+    h3
+        position: absolute
+        bottom: 0
+        margin: 0
+        padding: 20px 40px
+        transition: 1s transform ease 
+.update-bg
+    position: absolute
+    height: 100%
+    width: 100%
+    object-fit: cover
+    border-radius: 8px
+.update-fg
+    position: absolute
+    bottom: 0
+    height: 100%
+    width: 100%
+    object-fit: cover
+    object-position: center
+    transform: translateY(0)
+    transition: 1s transform ease 
+.update:hover
+    border: 2px solid #fff
+    transition: 1s border ease 
+    .update-fg
+        transform: translateY(20px)
+        transition: 1s transform ease 
+    h3
+        transform: translateY(-80px)
+        transition: 1s transform ease 
+.custom
+    padding: 0
+    margin: 80px
+    background-color: #000
+    display: flex
+    gap: 20px
+    border-radius: 8px
+    border: 1px solid #2d2d2d
+    div
+        flex: 1 400px
+.custom-text
+    padding: 40px
+    box-sizing: border-box
+    img
+        height: 100px
+
+.custom-img
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center
+        border-radius: 0 8px 8px 0
+.feedback
+    height: 300px
+    margin: 80px
+    background-color: #000
+    display: flex
+    align-items: center
+    gap: 20px
+    border-radius: 8px
+    border: 1px solid #2d2d2d
+    div
+        flex: 1 300px
+    .feedback-button
+        display: flex
+        justify-content: center
+        
+.rating
+    height: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    div
+        background-color: #000
+        border-radius: 8px
+        border: 1px solid #2d2d2d
+        padding: 20px
+.subscription
+    display: flex
+    justify-content: center
+    padding: 80px
+.subscription-container
+    width: 600px
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+        width: 100px
+    h2
+        font-size: 20px
+    p
+        text-align: center
+footer
+    background: #000
+    padding: 20px 80px
+@media only screen and (max-width: 450px)
+    header, section, footer
+        padding-left: 20px
+        padding-right: 20px
+    header
+        padding: 10px
+        height: auto
+        flex-wrap: wrap
+    .header-center
+        ul
+            padding: 0
+            flex-wrap: wrap
+            justify-content: space-between
+            list-style: none
+            gap: 25px
+    .header-right
+        width: 100%
+        display: grid
+        grid-template-columns: 1fr auto auto
+    .banner
+        height: auto
+        background-position: center
+        div
+            width: 100%
+            padding: 20px
+            box-sizing: border-box
+            background: #0000009b
+        img
+            display: none
+        h2
+            font-size: 30px
+        p
+            font-size: 16px
+            line-height: 30px
+            padding: 0
+    .news
+        padding: 20px
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: auto repeat(5, 400px)
+        grid-template-areas: "h2" "n1" "n2" "n3" "n4" "n5"
+        div 
+            background: #000
+            img
+                opacity: .5
+            h3
+                transform: translateY(0)
+    .updates
+        padding: 20px
+    .update
+        background-color: #000
+        img
+            opacity: .9
+        h3
+            color: #ffffff
+    .custom
+        padding: 0
+        margin: 20px
+        border-radius: 8px
+        div
+            flex: 1 400px
+    .custom-text
+        img
+            height: auto
+            width: 100%
+        button
+            width: 100%
+    .custom-img
+        display: none
+    .feedback
+        height: auto
+        margin: 20px
+        flex-wrap: wrap
+        .feedback-button
+            margin-bottom: 20px    
+
+    .subscription
+        padding: 20px
+        padding-bottom: 40px
+    .subscription-container
+        h2
+            text-align: center
+    footer
+        padding: 20px
